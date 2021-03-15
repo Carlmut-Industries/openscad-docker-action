@@ -1,5 +1,5 @@
 #!/bin/sh -l
 
-echo "Hello $1"
-time=$(date)
-echo "::set-output name=time::$time"
+openscad $1 -o /tmp/output.stl
+
+openscad $1 --viewall --autocenter -o /tmp/render.png
