@@ -10,3 +10,13 @@ Experimental Action to compile OpenSCAD in Docker, inspired by [docker-image-ope
 
 **Required** The file to be compiled.
 
+## Example
+
+Following is an example, used in [Carlmut-Industries/irony-lugs](https://github.com/Carlmut-Industries/irony-lugs)
+
+```yaml
+  - name: Build STL
+    uses: Carlmut-Industries/openscad-docker-action@main
+    with:
+      root_file: adapter-22mm.scad
+```
