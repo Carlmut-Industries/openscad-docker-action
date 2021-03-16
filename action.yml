@@ -1,9 +1,10 @@
-# action.yml
 name: 'Github Action for OpenSCAD'
+author: 'Johannes Arnold'
 description: 'Compile OpenSCAD in Docker'
 inputs:
   root_file:
     description: 'The file to be compiled'
+    default: '*.scad'
     required: true
 
 runs:
